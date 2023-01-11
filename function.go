@@ -41,7 +41,7 @@ func main() {
 	} else {
 		fmt.Println(s)
 	}
-	//defer is kind a destructor
+	
 	worker()
 
 	ctype, err := contentType("https://likedin.com")
