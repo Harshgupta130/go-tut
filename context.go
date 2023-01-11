@@ -44,7 +44,7 @@ func findBid(ctx context.Context, url string) Bid {
 func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 100*time.Millisecond)
 	defer cancel()
-	url := "https://httpl.cat/23"
+	url := "https://httpl.cat/231"
 	Bid1 := findBid(ctx, url)
 	fmt.Println(Bid1)
 
