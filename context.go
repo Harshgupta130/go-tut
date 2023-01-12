@@ -58,7 +58,11 @@ func main() {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	Bid2 := findBid(ctx, url1)
+=======
+	Bid2 := FindBid(ctx, url1)
+>>>>>>> Stashed changes
 =======
 	Bid2 := FindBid(ctx, url1)
 >>>>>>> Stashed changes
