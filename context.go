@@ -53,6 +53,6 @@ func main() {
 	ctx, cancel = context.WithTimeout(context.Background(), 10*time.Millisecond)
 	defer cancel()
 	url1 := "https://httpl.cat/2387"
-	Bid1:= findBid(ctx, url1)
-	fmt.Println(Bid1)
+	Bid2:= findBid(ctx, url1)
+	fmt.Println(Bid2)
 }
