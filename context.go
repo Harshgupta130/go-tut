@@ -26,7 +26,7 @@ var defaulterBid = Bid{
 	price: 0.02,
 }
 
-func findBid(ctx context.Context, url string) Bid {
+func FindBid(ctx context.Context, url string) Bid {
 	ch := make(chan Bid, 1) //buffered to avoid goroutine leak
 
 	go func() {
@@ -45,7 +45,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 100*time.Millisecond)
 	defer cancel()
 	url := "https://httpl.cat/231"
-	Bid1 := findBid(ctx, url)
+	Bid1 := FindBid(ctx, url)
 	fmt.Println(Bid1)
 
 	fmt.Println("----------")
@@ -53,6 +53,10 @@ func main() {
 	ctx, cancll = context.WithTimeout(context.Background(), 10*time.Millisecond)
 	defer cancll()
 	url1 := "https://httpl.cat/2387"
+<<<<<<< Updated upstream
 	Bid2 := findBid(ctx, url1)
+=======
+	Bid2 := FindBid(ctx, url1)
+>>>>>>> Stashed changes
 	fmt.Println(Bid2)
 }
