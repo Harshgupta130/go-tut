@@ -64,7 +64,7 @@ func doubleAt(values []int, i int) {
 	values[i] *= 2
 }
 func double(val int) {
-	val *= 2
+	val *= 5
 }
 
 func doublePointer(v *int) {
