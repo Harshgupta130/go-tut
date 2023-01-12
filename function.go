@@ -23,7 +23,7 @@ func main() {
 
 	//now using pointer
 
-	doublePtr(&val)
+	doublePointer(&val)
 	fmt.Println(val)
 
 	//error return from function
@@ -67,7 +67,7 @@ func double(val int) {
 	val *= 2
 }
 
-func doublePtr(v *int) {
+func doublePointer(v *int) {
 	*v *= 2
 }
 
