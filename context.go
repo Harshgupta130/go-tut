@@ -54,7 +54,19 @@ func main() {
 	defer cancll()
 	url1 := "https://httpl.cat/2387"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	Bid2 := findBid(ctx, url1)
+=======
+	Bid2 := FindBid(ctx, url1)
+>>>>>>> Stashed changes
+=======
+	Bid2 := FindBid(ctx, url1)
+>>>>>>> Stashed changes
+=======
+	Bid2 := FindBid(ctx, url1)
+>>>>>>> Stashed changes
 =======
 	Bid2 := FindBid(ctx, url1)
 >>>>>>> Stashed changes
