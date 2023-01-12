@@ -21,7 +21,7 @@ func bestBid(url string) Bid {
 
 }
 
-var defaultBid = Bid{
+var defaulterBid = Bid{
 	adurl: "https://adsRus.com/default",
 	price: 0.02,
 }
@@ -37,7 +37,7 @@ func findBid(ctx context.Context, url string) Bid {
 	case Bid1 := <-ch:
 		return Bid1
 	case <-ctx.Done():
-		return defaultBid
+		return defaulterBid
 	}
 }
 
@@ -53,6 +53,6 @@ func main() {
 	ctx, cancll = context.WithTimeout(context.Background(), 10*time.Millisecond)
 	defer cancll()
 	url1 := "https://httpl.cat/2387"
-	Bid2:= findBid(ctx, url1)
+	Bid2 := findBid(ctx, url1)
 	fmt.Println(Bid2)
 }
